@@ -38,6 +38,17 @@ h6 {
   color: inherit;
 }
 
+/* == BASIC PAGE STYLES == */
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+/* === CONTAINER === */
+.container {
+  margin: 0 auto;
+  width: 1200px;
+}
+
 /* visually hidden elements */
 .visually-hidden {
   position: absolute;
@@ -51,15 +62,4 @@ h6 {
   -webkit-clip-path: inset(50%);
           clip-path: inset(50%);
   margin: -1px;
-}
-
-/* == BASIC PAGE STYLES == */
-body {
-  font-family: "Poppins", sans-serif;
-}
-
-/* === CONTAINER === */
-.container {
-  margin: 0 auto;
-  width: 1200px;
 }/*# sourceMappingURL=main.css.map */
