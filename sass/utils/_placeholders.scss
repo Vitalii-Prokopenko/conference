@@ -1,0 +1,27 @@
+// Section title
+
+%section-title {
+  font-weight: 700;
+  font-size: 50px;
+  line-height: calc(60 / 50);
+  color: $darkColor;
+}
+
+// Section subtitle
+
+%section-subtitle {
+  font-family: $secondaryFont;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: calc(44 / 40);
+  color: $accentColor;
+}
+
+// Main text
+
+%main-text {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: calc(22 / 15);
+  color: $secondGrayColor;
+}
