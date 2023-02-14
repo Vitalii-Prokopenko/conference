@@ -46,7 +46,9 @@ body {
 /* === CONTAINER === */
 .container {
   margin: 0 auto;
-  width: 1200px;
+  width: 1440px;
+  padding: 0 135px;
+  outline: 1px solid crimson;
 }
 
 /* visually hidden elements */

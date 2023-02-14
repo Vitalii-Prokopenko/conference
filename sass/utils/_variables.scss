@@ -5,18 +5,22 @@ $mainFont: 'Poppins', sans-serif;
 $secondaryFont: 'Sassy Frass', cursive;
 
 // Text colors
+$lightColor: #fff;
+$darkColor: #000;
+$firstGrayColor: #666666;
+$secondGrayColor: #888888;
+$thirdGrayColor: #AAAAAA;
+$fourthGrayColor: #DDDDDD;
+$footerBgColor: #151515;
+$notActiveAccentColor: rgba(238, 0, 52, 0.15);
 
+// AccentColors
 
-// Background colors
-
-
-// Border colors
-
+$redAccentColor: #EE0034;
+$yellowAccentColor: #FFB339;
+$greenAccentColor: #25CD44;
+$blueAccentColor: #8000FF;
 
 // Breakpoints
+$minDesktop: 1440px;
 
-
-// Transitions
-
-
-// Other variables

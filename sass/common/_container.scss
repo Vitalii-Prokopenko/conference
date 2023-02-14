@@ -2,5 +2,9 @@
 
 .container {
   margin: 0 auto;
-  width: 1200px;
+  width: $minDesktop;
+  padding: 0 135px;
+  outline: 1px solid crimson;
+  // height: 100px;
+
 }
