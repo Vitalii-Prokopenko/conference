@@ -1,0 +1,71 @@
+/* === BUTTONS === */
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: calc(24 / 16);
+  text-transform: uppercase;
+  color: $lightColor;
+  background-color: $accentColor;
+  @include myTransition(color);
+  @include myTransition(background-color);
+  @include myTransition(border-color);
+  border: none;
+
+  cursor: pointer;
+  outline: none;
+
+  &:hover,
+  &:focus {
+    color: $accentColor;
+    background-color: $lightColor;
+    border: 1px solid $accentColor;
+  }
+
+  &-buy-ticket {
+    width: 140px;
+    height: 40px;
+  }
+
+  &-register-now {
+    width: 180px;
+    height: 50px;
+  }
+
+  &-view-more {
+    width: 150px;
+    height: 50px;
+    color: $accentColor;
+    background-color: transparent;
+    border: 1px solid $accentColor;
+
+    &:hover,
+    &:focus {
+      color: $lightColor;
+      background-color: $accentColor;
+    }
+  }
+
+  &-become-sponsor {
+    width: 230px;
+    height: 50px;
+  }
+
+  &-buy-ticket {
+    width: 150px;
+    height: 50px;
+  }
+
+  &-get-ticket {
+    width: 170px;
+    height: 50px;
+  }
+
+  &-subscribe {
+    width: 120px;
+    height: 40px;
+  }
+}

@@ -25,3 +25,6 @@ $blueAccentColor: #8000FF;
 // Breakpoints
 $minDesktop: 1440px;
 
+// Transitions
+$transitionFunction: cubic-bezier(0.4, 0, 0.2, 1);
+$transitionTime: 500ms;
