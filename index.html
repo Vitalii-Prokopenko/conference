@@ -30,7 +30,7 @@
           <!-- Navigation -->
           <nav class="header__nav">
             <!-- Logo -->
-            <a href="" class="logo">
+            <a href="#" class="logo">
               <svg class="logo__icon" width="36" height="40">
                 <use href="./img/icons/icons.svg#icon-logo-img"></use>
               </svg>
@@ -139,12 +139,14 @@
             </ul>
           </nav>
           <!-- Search bar -->
-          <label for="search" class="header__search-label">
-            <svg class="search__icon" width="23" height="20">
-              <use href="./img/icons/icons.svg#icon-search"></use>
-            </svg>
-          </label>
-          <input id="search" class="header__search-input" type="text" placeholder="Search..." />
+          <div class="search__wrap">
+            <label for="search" class="header__search-label">
+              <svg class="header__search-icon" width="23" height="20">
+                <use href="./img/icons/icons.svg#icon-search"></use>
+              </svg>
+            </label>
+            <input id="search" class="header__search-input" type="text" placeholder="Search..." />
+          </div>
           <!-- Basket -->
           <a href="" class="link header__basket">
             <svg class="basket__icon" width="23" height="20">
@@ -621,7 +623,9 @@
               But I must explain to you how all this mistaken idea of denouncing pleasure and
               praising pain was born and I will give you a complete account of the system.
             </p>
-            <button type="button" class="btn partners__btn btn-become-sponsor">become a sponsor</button>
+            <button type="button" class="btn partners__btn btn-become-sponsor">
+              become a sponsor
+            </button>
           </div>
           <div class="partners__wrap">
             <div class="partners__category-wrap">
@@ -1051,24 +1055,48 @@
         <div class="footer__block">
           <p class="footer__subtitle">instagram</p>
           <ul class="list footer__img-list">
-            <li class="footer__img-item"><a class="footer__img-link" href=""><img class="footer__img" src="./img/footer/footer-1-84.jpg" alt=""></a></li>
-            <li class="footer__img-item"><a class="footer__img-link" href=""><img class="footer__img" src="./img/footer/footer-2-84.jpg" alt=""></a></li>
-            <li class="footer__img-item"><a class="footer__img-link" href=""><img class="footer__img" src="./img/footer/footer-3-84.jpg" alt=""></a></li>
-            <li class="footer__img-item"><a class="footer__img-link" href=""><img class="footer__img" src="./img/footer/footer-4-84.jpg" alt=""></a></li>
-            <li class="footer__img-item"><a class="footer__img-link" href=""><img class="footer__img" src="./img/footer/footer-5-84.jpg" alt=""></a></li>
-            <li class="footer__img-item"><a class="footer__img-link" href=""><img class="footer__img" src="./img/footer/footer-6-84.jpg" alt=""></a></li>
+            <li class="footer__img-item">
+              <a class="footer__img-link" href=""
+                ><img class="footer__img" src="./img/footer/footer-1-84.jpg" alt=""
+              /></a>
+            </li>
+            <li class="footer__img-item">
+              <a class="footer__img-link" href=""
+                ><img class="footer__img" src="./img/footer/footer-2-84.jpg" alt=""
+              /></a>
+            </li>
+            <li class="footer__img-item">
+              <a class="footer__img-link" href=""
+                ><img class="footer__img" src="./img/footer/footer-3-84.jpg" alt=""
+              /></a>
+            </li>
+            <li class="footer__img-item">
+              <a class="footer__img-link" href=""
+                ><img class="footer__img" src="./img/footer/footer-4-84.jpg" alt=""
+              /></a>
+            </li>
+            <li class="footer__img-item">
+              <a class="footer__img-link" href=""
+                ><img class="footer__img" src="./img/footer/footer-5-84.jpg" alt=""
+              /></a>
+            </li>
+            <li class="footer__img-item">
+              <a class="footer__img-link" href=""
+                ><img class="footer__img" src="./img/footer/footer-6-84.jpg" alt=""
+              /></a>
+            </li>
           </ul>
         </div>
         <!-- 4th block -->
         <div class="footer__block"></div>
-         <p class="footer__subtitle">join our newsletter</p>
-         <p class="footer__text">Stay informed about the latest events.</p>
-         <!-- Subscribe form -->
-         <form class="footer__form">
+        <p class="footer__subtitle">join our newsletter</p>
+        <p class="footer__text">Stay informed about the latest events.</p>
+        <!-- Subscribe form -->
+        <form class="footer__form">
           <label class="footer__form-label" for="email-subscribe"></label>
-          <input class="footer__for-input" type="email" placeholder="Email*">
+          <input class="footer__for-input" type="email" placeholder="Email*" />
           <button class="btn footer__form-btn btn-subscribe" type="submit">subscribe</button>
-         </form>
+        </form>
       </div>
       <!-- Lower footer -->
       <div class="footer__lower">

@@ -1,0 +1,47 @@
+/* === HEADER AND HERO === */
+.header-and-hero {
+  margin: 0 auto;
+
+  width: 100%;
+  height: auto;
+  //   max-width: 1440px;
+  //   max-height: 750px;
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: gray;
+
+//   background-image: url(../img/hero-bg/hero-bg-1440.webp);
+//   @include pixel-ratio-2x {
+//     background-image: url(../img/hero-bg/hero-bg-@2x-2880.webp);
+//   }
+}
+
+.header {
+  &__container {
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__nav {
+    display: flex;
+  }
+
+  &__search-icon {
+    stroke: $lightColor;
+    
+  }
+
+  &__search-input {
+    display: none;
+  }
+
+  &__basket {
+    fill: $lightColor;
+  }
+}

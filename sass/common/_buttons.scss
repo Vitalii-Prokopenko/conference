@@ -13,10 +13,7 @@
   @include myTransition(color);
   @include myTransition(background-color);
   @include myTransition(border-color);
-  border: none;
-
-  cursor: pointer;
-  outline: none;
+  border: none;  
 
   &:hover,
   &:focus {

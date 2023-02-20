@@ -1,0 +1,31 @@
+/* === LOGO === */
+.logo {
+  margin-right: 108px;
+
+  display: flex;
+  align-items: center;
+
+  &__icon {
+    @include myTransition(fill);
+
+    &:not(:last-child) {
+      margin-right: 11.22px;
+    }
+
+    &:nth-child(1) {
+      fill: $accentColor;
+    }
+
+    &:nth-child(2) {
+      fill: $lightColor;
+    }
+  }
+
+  &:hover &__icon:nth-child(1) {
+    fill: $lightColor;
+  }
+
+  &:hover &__icon:nth-child(2) {
+    fill: $accentColor;
+  }
+}
