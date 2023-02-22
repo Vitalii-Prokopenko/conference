@@ -2,10 +2,9 @@
 .menu {
   display: flex;
   align-items: center;
-  overflow: hidden;
 
-  &__dropdown {    
-    overflow: hidden;
+  &__dropdown {
+    position: relative;
   }
 
   &__dropdown:not(:last-child) {
@@ -17,6 +16,7 @@
     border: none;
     outline: none;
 
+    text-transform: uppercase;
     color: $lightColor;
     background-color: transparent;
 
@@ -28,8 +28,9 @@
   }
 
   &__dropdown-content {
-    display: none;
     position: absolute;
+    visibility: hidden;
+    z-index: -1;
 
     padding: 10px 0;
     width: 100px;
@@ -38,11 +39,20 @@
 
     background-color: $fourthGrayColor;
     box-shadow: 10px 10px 20px rgba($darkColor, 0.5);
-    z-index: 2;
+
+    transform: translateY(-100%);
+    opacity: 0;
+
+    @include myTransition(transform);
+    @include myTransition(opacity);
+    @include myTransition(z-index);
   }
 
   &__dropdown:hover &__dropdown-content {
-    display: block;
+    visibility: visible;
+    z-index: 2;
+    transform: translateY(0);
+    opacity: 1;
   }
 
   &__dropdown:hover &__drop-btn {
@@ -52,18 +62,18 @@
   &__dropdown:hover &__drop-btn::after {
     transform: rotate(90deg);
     color: inherit;
-  }  
+  }
+
+  &__dropdown:hover &__dropdown-link {
+    animation: slideInLeft 0.3s ease-in-out backwards;
+  }
 
   &__drop-btn,
   &__dropdown-link {
     font-weight: 500;
     font-size: 14px;
     line-height: calc(21 / 14);
-  }
-
-  &__drop-btn {
-    text-transform: uppercase;
-  }
+  }  
 
   &__dropdown-link {
     padding: 3px 0 3px 10px;
@@ -72,5 +82,17 @@
       color: $accentColor;
       background-color: $thirdGrayColor;
     }
+  }
+}
+
+@keyframes slideInLeft {
+  from {
+    transform: translate(-25%, 0);
+    opacity: 0;
+  }
+
+  to {
+    transform: translate(0, 0);
+    opacity: 1;
   }
 }
