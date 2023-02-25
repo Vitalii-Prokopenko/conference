@@ -3,7 +3,7 @@
   margin: 0 auto;
 
   width: 100%;
-  height: auto;
+  height: 750px;
   //   max-width: 1440px;
   //   max-height: 750px;
 
@@ -125,15 +125,23 @@
       background-color: $lightColor;
     }
   }
+
+  &__btn {
+    height: 40px;
+  }
 }
 
 /* === HERO === */
 
 .hero {
   &__container {
+    position: relative;
+
     padding-right: 95px;
+    padding-bottom: 96px;
 
     display: flex;
+    align-items: center;
   }
 
   &__event {
@@ -197,8 +205,62 @@
     }
   }
 
+  &__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 50% 50%;
+  }
 
-  &__countdown-list {
-    display: none;
+  &__countdown {
+    &-wrap {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+
+      padding-left: 133px;
+      padding-top: 21px;
+      padding-bottom: 21px;
+
+      width: 723.5px;
+      height: 130.04px;
+      background-image: url(../img/count-bg/count-bg.png);
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+
+    &-list {
+      display: flex;
+    }
+
+    &-item:not(:last-child) {
+      margin-right: 74px;
+    }
+
+    &-time {
+      display: flex;
+      flex-direction: column;
+
+      font-weight: 600;
+      font-size: 16px;
+      // line-height: calc(29 / 16);
+      text-align: center;
+      text-transform: uppercase;
+    }
+
+    &-numbers {
+      font-weight: 700;
+      font-size: 40px;
+      line-height: calc(72 / 40);
+      text-align: center;
+      text-transform: uppercase;
+    }
   }
 }
+
+// @each $colorNumber in first, second, third, fourth {
+// .time-#{$colorNumber} {
+//   color: getColor();
+// }
+// }

@@ -138,7 +138,7 @@ body {
 .header-and-hero {
   margin: 0 auto;
   width: 100%;
-  height: auto;
+  height: 750px;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -250,13 +250,21 @@ body {
   width: 1px;
   background-color: #fff;
 }
+.header__btn {
+  height: 40px;
+}
 
 /* === HERO === */
 .hero__container {
+  position: relative;
   padding-right: 95px;
+  padding-bottom: 96px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .hero__event {
   margin-bottom: 1px;
@@ -312,8 +320,55 @@ body {
 .hero__btn-item:not(:last-child) {
   margin-right: 20px;
 }
+.hero__img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: 50% 50%;
+     object-position: 50% 50%;
+}
+.hero__countdown-wrap {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding-left: 133px;
+  padding-top: 21px;
+  padding-bottom: 21px;
+  width: 723.5px;
+  height: 130.04px;
+  background-image: url(../img/count-bg/count-bg.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
 .hero__countdown-list {
-  display: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.hero__countdown-item:not(:last-child) {
+  margin-right: 74px;
+}
+.hero__countdown-time {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-weight: 600;
+  font-size: 16px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.hero__countdown-numbers {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 1.8;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 /* === LOGO === */
@@ -455,8 +510,32 @@ body {
   }
 }
 /* === HERO-SLIDER === */
-.hero-slider {
+.swiper {
   width: 610px;
   height: 554px;
-  background-color: #fff;
+}
+.swiper-wrapper {
+  width: 100%;
+  height: 520px;
+}
+.swiper-slide {
+  width: 400px;
+}
+.swiper-slide-next {
+  width: 190px;
+  height: 520px;
+  overflow: hidden;
+}
+.swiper-pagination-bullet {
+  width: 15px;
+  height: 4px;
+  border-radius: 0;
+  background-color: #AAAAAA;
+}
+.swiper-pagination-bullet-active {
+  width: 25px;
+  background-color: #EE0034;
+}
+.swiper-button-next, .swiper-button-prev {
+  display: none;
 }/*# sourceMappingURL=main.css.map */

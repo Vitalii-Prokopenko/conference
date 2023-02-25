@@ -18,6 +18,8 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
     />
+    <!-- Swiper styles -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
     <!-- Custom styles -->
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
@@ -194,12 +196,86 @@
           <!-- Slider main container -->
           <div class="swiper hero-slider">
             <!-- Additional required wrapper -->
-            <div class="swiper-wrapper">
+            <div class="swiper-wrapper hero-swiper-wrapper">
               <!-- Slides -->
-              <div class="swiper-slide">Slide 1</div>
-              <div class="swiper-slide">Slide 2</div>
-              <div class="swiper-slide">Slide 3</div>
-              ...
+              <!-- Slide 1 -->
+              <div class="swiper-slide hero-swiper-slide">
+                <picture class="hero__picture">
+                  <source
+                    srcset="
+                      img/hero-slider/hero-slider1-400.webp     1x,
+                      img/hero-slider/hero-slider1-@2x-800.webp 2x
+                    "
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="
+                      img/hero-slider/hero-slider1-400.jpg     1x,
+                      img/hero-slider/hero-slider1-@2x-800.jpg 2x
+                    "
+                    type="image/jpeg"
+                  />
+                  <img
+                    class="hero__img"
+                    src="img/hero-slider/hero-slider1-400.jpg"
+                    alt="conference speaker"
+                    width="400"
+                    height="520"
+                  />
+                </picture>
+              </div>
+              <!-- Slide 2 -->
+              <div class="swiper-slide hero-swiper-slide">
+                <picture class="hero__picture">
+                  <source
+                    srcset="
+                      img/hero-slider/hero-slider2-400.webp     1x,
+                      img/hero-slider/hero-slider2-@2x-800.webp 2x
+                    "
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="
+                      img/hero-slider/hero-slider2-400.jpg     1x,
+                      img/hero-slider/hero-slider2-@2x-800.jpg 2x
+                    "
+                    type="image/jpeg"
+                  />
+                  <img
+                    class="hero__img"
+                    src="img/hero-slider/hero-slider2-400.jpg"
+                    alt="conference speaker"
+                    width="400"
+                    height="520"
+                  />
+                </picture>
+              </div>
+              <!-- Slide 3 -->
+              <div class="swiper-slide hero-swiper-slide">
+                <picture class="hero__picture">
+                  <source
+                    srcset="
+                      img/hero-slider/hero-slider3-400.webp     1x,
+                      img/hero-slider/hero-slider3-@2x-800.webp 2x
+                    "
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="
+                      img/hero-slider/hero-slider3-400.jpg     1x,
+                      img/hero-slider/hero-slider3-@2x-800.jpg 2x
+                    "
+                    type="image/jpeg"
+                  />
+                  <img
+                    class="hero__img"
+                    src="img/hero-slider/hero-slider3-400.jpg"
+                    alt="conference speaker"
+                    width="400"
+                    height="520"
+                  />
+                </picture>
+              </div>
             </div>
             <!-- If we need pagination -->
             <div class="swiper-pagination"></div>
@@ -212,20 +288,26 @@
             <div class="swiper-scrollbar"></div>
           </div>
           <!-- Countdown -->
-          <ul class="list hero__countdown-list">
-            <li class="hero__countdown-item">
-              <p class="hero__countdown"><span class="hero__countdown-numbers">23</span>day</p>
-            </li>
-            <li class="hero__countdown-item">
-              <p class="hero__countdown"><span class="hero__countdown-numbers">18</span>hours</p>
-            </li>
-            <li class="hero__countdown-item">
-              <p class="hero__countdown"><span class="hero__countdown-numbers">39</span>minutes</p>
-            </li>
-            <li class="hero__countdown-item">
-              <p class="hero__countdown"><span class="hero__countdown-numbers">45</span>seconds</p>
-            </li>
-          </ul>
+          <div class="hero__countdown-wrap">
+            <ul class="list hero__countdown-list">
+              <li class="hero__countdown-item">
+                <p class="hero__countdown-time time-first"><span class="hero__countdown-numbers">23</span>day</p>
+              </li>
+              <li class="hero__countdown-item">
+                <p class="hero__countdown-time time-second"><span class="hero__countdown-numbers">18</span>hours</p>
+              </li>
+              <li class="hero__countdown-item">
+                <p class="hero__countdown-time time-green">
+                  <span class="hero__countdown-numbers">39</span>minutes
+                </p>
+              </li>
+              <li class="hero__countdown-item">
+                <p class="hero__countdown-time time-blue">
+                  <span class="hero__countdown-numbers">45</span>seconds
+                </p>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </header>
@@ -1147,5 +1229,8 @@
         </div>
       </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <!-- Initialize Hero Swiper -->
+    <script type="text/javascript" src="js/swiper.js"></script>
   </body>
 </html>

@@ -1,6 +1,37 @@
 /* === HERO-SLIDER === */
-.hero-slider {
-    width: 610px;
-    height: 554px;
-    background-color: #fff;
-} 
+.swiper {
+  width: 610px;
+  height: 554px;
+
+  &-wrapper {
+    width: 100%;
+    height: 520px;
+  }
+
+  &-slide {
+    width: 400px;
+
+    &-next {
+      width: 190px;
+      height: 520px;
+      overflow: hidden;
+    }
+  }
+
+  &-pagination-bullet {
+    width: 15px;
+    height: 4px;
+    border-radius: 0;
+    background-color: $thirdGrayColor;
+
+    &-active {
+      width: 25px;
+      background-color: $accentColor;
+    }
+  }
+
+  &-button-next,
+  &-button-prev {
+    display: none;
+  }
+}
