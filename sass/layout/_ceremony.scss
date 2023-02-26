@@ -1,0 +1,108 @@
+/* === CEREMONY === */
+.ceremony {
+  &__container {
+    padding-top: 89px;
+    padding-bottom: 100px;
+
+    display: flex;
+  }
+
+  &__subtitle {
+    margin-bottom: 11px;
+    @extend %section-subtitle;
+  }
+
+  &__title {
+    margin-bottom: 26px;
+    @extend %section-title;
+
+    width: 540px;
+  }
+
+  &__text {
+    @extend %main-text;
+
+    width: 573px;
+  }
+
+  &__list {
+    position: relative;
+  }
+
+  &__item {
+    position: absolute;
+
+    padding: 24px 15px 40px;
+    width: 170px;
+    height: 204px;
+
+    color: $lightColor;
+
+    @include myTransition(z-index);
+    @include myTransition(transform);
+    @include myTransition(box-shadow);
+
+    &:nth-child(1) {
+      left: 0;
+      top: 44px;
+      z-index: 2;
+    }
+
+    &:nth-child(2) {
+      left: 140px;
+      bottom: 31px;
+      z-index: 3;
+    }
+
+    &:nth-child(3) {
+      left: 280px;
+      top: 0;
+      z-index: 4;
+    }
+
+    &:nth-child(4) {
+      left: 420px;
+      bottom: 0;
+      z-index: 5;
+    }
+
+    &:hover,
+    &:focus {
+      z-index: 6;
+      transform: scale(1.2);
+      box-shadow: 10px 10px 30px rgba(gray, 0.7);
+    }
+
+    &-title {
+      margin-bottom: 12px;
+
+      display: flex;
+      flex-direction: column;
+
+      font-weight: 600;
+      font-size: 16px;
+      line-height: calc(29 / 16);
+      text-align: center;
+    }
+
+    &-number {
+      font-weight: 700;
+      font-size: 30px;
+      line-height: calc(54 / 30);
+      text-align: center;
+    }
+
+    &-text {
+      font-weight: 500;
+      font-size: 12px;
+      line-height: calc(18 / 12);
+      text-align: center;
+    }
+  }
+}
+
+@each $colorNumber in 'first', 'second', 'third', 'fourth' {
+  .item-#{$colorNumber} {
+    background-color: getColor(#{$colorNumber});
+  }
+}

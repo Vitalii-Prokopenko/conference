@@ -98,6 +98,10 @@
       border-radius: 50%;    
     }
 
+    // &-picture:hover &-picture::after {
+    //   transform: rotate(180deg);
+    // }
+
     &:nth-child(1) &-picture::after {
       bottom: -80px;
       right: -80px;
