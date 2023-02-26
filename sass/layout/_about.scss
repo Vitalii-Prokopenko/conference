@@ -1,0 +1,66 @@
+/* === ABOUT === */
+.about {
+  &__container {
+    padding: 0;
+
+    display: flex;
+  }
+
+  &__wrap {
+    padding: 39px 27px 54px 135px;
+    width: 735px;
+  }
+
+  &__subtitle {
+    margin-bottom: 16px;
+    @extend %section-subtitle;
+  }
+
+  &__title {
+    margin-bottom: 25px;
+    @extend %section-title;
+  }
+
+  &__text {
+    margin-bottom: 32px;
+    @extend %main-text;
+  }
+
+  &__guest {
+    &-wrap {
+      display: flex;
+    }
+
+    &-type {
+      @extend %section-subtitle;
+      font-size: 30px;
+      line-height: calc(30 / 30);
+    }
+
+    &-name {
+      font-weight: 600;
+      font-size: 25px;
+      line-height: calc(25 / 25);
+      text-align: right;
+    }
+
+    &-position {
+      font-weight: 500;
+      font-size: 11px;
+      line-height: calc(16 / 11);
+      color: $firstGrayColor;
+    }
+  }
+
+  &__thumb {
+    margin-right: 20px;
+    padding: 5px;
+    border: 1px dashed rgba(128, 0, 255, 0.25);
+    border-radius: 13px;
+
+    &-inner {
+      border-radius: 13px;
+      overflow: hidden;
+    }
+  }
+}

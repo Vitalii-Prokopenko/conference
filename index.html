@@ -464,7 +464,31 @@
             </p>
             <div class="about__guest-wrap">
               <div class="about__thumb">
-                <img src="" alt="spacial guest photo" width="70" height="70" />
+                <div class="about__thumb-inner">
+                  <picture class="about__guest-picture">
+                    <source
+                      srcset="
+                        ./img/special-guest/special-guest-70.webp      1x,
+                        ./img/special-guest/special-guest-@2x-140.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./img/special-guest/special-guest-70.jpg      1x,
+                        ./img/special-guest/special-guest-@2x-140.jpg 2x
+                      "
+                      type="image/jpeg"
+                    />
+                    <img
+                      class="img features__item-img"
+                      src="./img/special-guest/special-guest-70.jpg"
+                      alt="spacial guest photo"
+                      width="70"
+                      height="70"
+                    />
+                  </picture>
+                </div>
               </div>
               <div class="about__guest-name-wrap">
                 <p class="about__guest-type">Special Guest</p>
@@ -473,13 +497,26 @@
               </div>
             </div>
           </div>
+          <div class="about__img-wrap">
+            <picture class="about__picture">
+              <source
+                srcset="./img/about/about-705.webp 1x, ./img/bout/about-@2x-1410.webp 2x"
+                type="image/webp"
+              />
+              <source
+                srcset="./img/about/about-705.jpg 1x, ./img/about/about-@2x-1410.jpg 2x"
+                type="image/jpeg"
+              />
+              <img
+                class="img about__img"
+                src="./img/about/about-705.jpg"
+                alt="special guest speaks at the conference"
+                width="705"
+                height="600"
+              />
+            </picture>
+          </div>
         </div>
-        <img
-          src="./img/about/about-705.jpg"
-          alt="speacial guest speaks at the conference"
-          width="705"
-          height="600"
-        />
       </section>
       <!-- === SCHEDULE === -->
       <section class="schedule">
