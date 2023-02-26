@@ -1,0 +1,117 @@
+/* === FEATURES === */
+.features {
+  &__container {
+    padding-top: 91px;
+    padding-bottom: 100px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  &__subtitle {
+    margin-bottom: 11px;
+
+    @extend %section-subtitle;
+  }
+
+  &__title {
+    margin-bottom: 11px;
+
+    @extend %section-title;
+    width: 539px;
+  }
+
+  &__text {
+    margin-bottom: 60px;
+
+    @extend %main-text;
+    width: 573px;
+  }
+
+  &__list {
+    align-self: stretch;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    height: 852px;
+  }
+
+  &__item {
+    display: flex;
+
+    &:nth-child(1) {
+      align-self: flex-end;
+      flex-direction: column;
+    }
+
+    &:nth-child(2) {
+      flex-direction: column-reverse;
+    }
+
+    &-title {
+      font-size: 35px;
+      line-height: calc(42 / 35);
+      text-align: left;
+      color: $darkColor;
+    }
+
+    &:nth-child(1) &-title {
+      margin-bottom: 34px;
+      width: 343px;
+    }
+
+    &:nth-child(2) &-title {
+      margin-bottom: 25px;
+      width: 308px;
+    }
+
+    &-text {
+      @extend %main-text;
+      text-align: left;
+      width: 370px;
+    }
+
+    &:nth-child(1) &-text {
+      margin-bottom: 62px;
+    }
+
+    &:nth-child(2) &-img {
+      margin-bottom: 102px;
+    }
+
+    &-picture {
+      position: relative;
+    }
+
+    &-picture::after {
+      position: absolute;
+
+      z-index: -1;
+
+      content: '';
+      display: block;
+      width: 326px;
+      height: 326px;
+      border-radius: 50%;    
+    }
+
+    &:nth-child(1) &-picture::after {
+      bottom: -80px;
+      right: -80px;
+    }
+
+    &:nth-child(2) &-picture::after {
+      bottom: 20px;
+      right: -80px;
+    }
+  }
+}
+
+@each $colorNumber in 'second', 'third' {
+  .semisphere-#{$colorNumber}::after {
+    background: linear-gradient(to right bottom, transparent 50%, getColor(#{$colorNumber}) 50%);
+  }
+}

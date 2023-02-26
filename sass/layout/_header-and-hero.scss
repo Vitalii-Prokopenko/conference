@@ -259,8 +259,10 @@
   }
 }
 
-// @each $colorNumber in first, second, third, fourth {
-// .time-#{$colorNumber} {
-//   color: getColor();
-// }
-// }
+/* Accent colors for countdown */
+
+@each $colorNumber in 'first', 'second', 'third', 'fourth' {
+  .time-#{$colorNumber} {
+    color: getColor(#{$colorNumber});
+  }
+}

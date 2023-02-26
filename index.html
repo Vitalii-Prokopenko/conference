@@ -291,18 +291,22 @@
           <div class="hero__countdown-wrap">
             <ul class="list hero__countdown-list">
               <li class="hero__countdown-item">
-                <p class="hero__countdown-time time-first"><span class="hero__countdown-numbers">23</span>day</p>
+                <p class="hero__countdown-time time-first">
+                  <span class="hero__countdown-numbers">23</span>day
+                </p>
               </li>
               <li class="hero__countdown-item">
-                <p class="hero__countdown-time time-second"><span class="hero__countdown-numbers">18</span>hours</p>
+                <p class="hero__countdown-time time-second">
+                  <span class="hero__countdown-numbers">18</span>hours
+                </p>
               </li>
               <li class="hero__countdown-item">
-                <p class="hero__countdown-time time-green">
+                <p class="hero__countdown-time time-third">
                   <span class="hero__countdown-numbers">39</span>minutes
                 </p>
               </li>
               <li class="hero__countdown-item">
-                <p class="hero__countdown-time time-blue">
+                <p class="hero__countdown-time time-fourth">
                   <span class="hero__countdown-numbers">45</span>seconds
                 </p>
               </li>
@@ -323,30 +327,69 @@
           </p>
           <ul class="list features__list">
             <li class="features__item">
-              <p class="features__item-title">Meet Our Top Marketing Speaker</p>
-              <p class="features__item-text">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                incididunt ut labore et dolore.
-              </p>
-              <img
+              <div class="features__item-wrap">
+                <h3 class="features__item-title">Meet Our Top Marketing Speake</h3>
+                <p class="features__item-text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                  incididunt ut labore et dolore.
+                </p>
+              </div>
+              <picture class="features__item-picture semisphere-second">
+                  <source
+                    srcset="
+                      ./img/features/features-left-470.webp     1x,
+                      ./img/features/features-left-@2x-940.webp 2x
+                    "
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="
+                      ./img/features/features-left-470.jpg     1x,
+                      ./img/features/features-left-@2x-940.jpg 2x
+                    "
+                    type="image/jpeg"
+                  />
+                  <img
+                class="img features__item-img"
                 src="./img/features/features-left-470.jpg"
                 alt="conference guests applaud"
                 width="470"
                 height="540"
               />
+                </picture>              
             </li>
             <li class="features__item">
-              <p class="features__item-title">Learn Event Conference More</p>
-              <p class="features__item-text">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                incididunt ut labore et dolore.
-              </p>
-              <img
+              <div class="features__item-wrap">
+                <h3 class="features__item-title">Learn Event Conference More</h3>
+                <p class="features__item-text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                  incididunt ut labore et dolore.
+                </p>
+              </div>
+              <picture class="features__item-picture semisphere-third">
+                  <source
+                    srcset="
+                      ./img/features/features-right-570.webp     1x,
+                      ./img/features/features-right-@2x-1140.webp 2x
+                    "
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="
+                      ./img/features/features-right-570.jpg     1x,
+                      ./img/features/features-right-@2x-1140.jpg 2x
+                    "
+                    type="image/jpeg"
+                  />
+                  <img
+                class="img features__item-img"
                 src="./img/features/features-right-570.jpg"
                 alt="conference guests listen speaker"
                 width="570"
                 height="570"
               />
+                </picture>   
+              
             </li>
           </ul>
         </div>
