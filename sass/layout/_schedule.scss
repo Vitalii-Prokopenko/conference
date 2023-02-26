@@ -1,0 +1,152 @@
+/* === SCHEDULE === */
+.schedule {
+  &__container {
+    padding: 95px 135px 97px 108px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__subtitle {
+    @extend %section-subtitle;
+  }
+
+  &__title {
+    margin-bottom: 4px;
+    @extend %section-title;
+  }
+
+  &__text {
+    margin-bottom: 30px;
+    @extend %main-text;
+    text-align: center;
+    width: 573px;
+  }
+
+  &__filter {
+    &-list {
+      margin-bottom: 30px;
+      display: flex;
+    }
+
+    &-item:not(:last-child) {
+      margin-right: 28px;
+    }
+
+    &-btn {
+      padding: 5px 15px;
+
+      font-weight: 500;
+      font-size: 14px;
+      line-height: calc(21 / 14);
+      text-transform: uppercase;
+      color: $thirdGrayColor;
+      border: none;
+      outline: none;
+      background-color: transparent;
+
+      @include myTransition(color);
+      @include myTransition(background-color);
+
+      &:hover,
+      &:focus {
+        color: $lightColor;
+        background-color: $accentColor;
+      }
+    }
+  }
+
+  &__table {
+    @include myBorder(top);
+    @include myBorder(left);
+    border-spacing: 0;
+    color: $darkColor;
+
+    &-head-cell,
+    &-side-head-cell,
+    &-cell {
+      padding: 0;
+      width: 234px;
+      @include myBorder(bottom);
+      @include myBorder(right);
+    }
+
+    &-head-cell {
+      height: 97px;
+
+      font-weight: 600;
+      font-size: 18px;
+      line-height: calc(27 / 18);
+      text-transform: uppercase;
+    }
+
+    &-side-head-cell {
+      height: 130px;
+
+      font-weight: 500;
+      font-size: 16px;
+      line-height: calc(24 / 16);
+    }
+
+    &-cell {
+      height: 130px;
+    }
+
+    &-text {
+      text-align: center;
+
+      &:nth-child(1) {
+        margin-bottom: 7px;
+
+        font-weight: 500;
+        font-size: 18px;
+        line-height: calc(27 / 18);
+        color: $darkColor;
+      }
+
+      &:nth-child(2) {
+        margin-bottom: 2px;
+
+        font-weight: 500;
+        font-size: 15px;
+        line-height: calc(22 / 15);
+        color: $firstGrayColor;
+      }
+
+      &:nth-child(3) {
+        font-weight: 400;
+        font-size: 15px;
+        line-height: calc(22 / 15);
+        color: $accentColor;
+      }
+    }
+  }
+}
+
+@each $colorNumber in 'first', 'second', 'third', 'fourth' {
+  .#{$colorNumber} {
+    background-color: getColorLight(#{$colorNumber}Light);
+  }
+}
+
+@each $colorNumber in 'first', 'second', 'third', 'fourth' {
+  .#{$colorNumber}.event {
+    @include myBorderEvent(bottom, getColor(#{$colorNumber}));
+
+    &:hover,
+    &:focus {
+      box-shadow: inset 0px 0px 42px 23px rgba(getColor(#{$colorNumber}), 0.3);
+    }
+
+    &:hover .schedule__table-text,
+    &:focus .schedule__table-text {
+      transform: scale(1.2);
+    }
+  }
+}
+
+@each $colorNumber in 'first', 'second', 'third', 'fourth' {
+  .schedule__table-cell.#{$colorNumber} .schedule__table-text:nth-child(3) {
+    color: getColor(#{$colorNumber});
+  }
+}

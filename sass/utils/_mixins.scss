@@ -1,9 +1,7 @@
 // Mixin for pixel-ratio-media-queries
 
 @mixin pixel-ratio-2x {
-  @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
     @content;
   }
 }
@@ -12,4 +10,24 @@
 
 @mixin myTransition($property) {
   transition: $property $transitionTime $transitionFunction;
+}
+
+// Mixin for table borders
+
+@mixin myBorder($place) {
+  @if $place == 'all' {
+    border: 1px solid $tableBorderColor;
+  } @else {
+    border-#{$place}: 1px solid $tableBorderColor;
+  }
+}
+
+// Mixin for table borders with events
+
+@mixin myBorderEvent($place, $color) {
+  @if $place == 'all' {
+    border: 5px solid $color;
+  } @else {
+    border-#{$place}: 5px solid $color;
+  }
 }
