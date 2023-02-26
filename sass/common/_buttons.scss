@@ -38,6 +38,8 @@
     color: $accentColor;
     background-color: transparent;
     border: 1px solid $accentColor;
+    @include myTransition(color);
+    @include myTransition(background-color);
 
     &:hover,
     &:focus {

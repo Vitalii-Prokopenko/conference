@@ -119,6 +119,10 @@ body {
   color: #EE0034;
   background-color: transparent;
   border: 1px solid #EE0034;
+  -webkit-transition: color 500ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 500ms cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition: background-color 500ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 500ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .btn-view-more:hover, .btn-view-more:focus {
   color: #fff;
@@ -660,13 +664,23 @@ body {
 .features__item:nth-child(1) .features__item-text {
   margin-bottom: 62px;
 }
-.features__item:nth-child(2) .features__item-img {
+.features__item:nth-child(2) .features__item-img-wrap {
   margin-bottom: 102px;
 }
-.features__item-picture {
-  position: relative;
+.features__item-img {
+  -webkit-transition: -webkit-transform 500ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: -webkit-transform 500ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 500ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 500ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 500ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.features__item-picture::after {
+.features__item-img-wrap {
+  position: relative;
+  -webkit-transition: -webkit-box-shadow 500ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: -webkit-box-shadow 500ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: box-shadow 500ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: box-shadow 500ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 500ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.features__item-img-wrap::after {
   position: absolute;
   z-index: -1;
   content: "";
@@ -675,13 +689,20 @@ body {
   height: 326px;
   border-radius: 50%;
 }
-.features__item:nth-child(1) .features__item-picture::after {
+.features__item-img-wrap::after {
   bottom: -80px;
   right: -80px;
 }
-.features__item:nth-child(2) .features__item-picture::after {
-  bottom: 20px;
-  right: -80px;
+.features__item-img-wrap:hover {
+  -webkit-box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.7);
+          box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.7);
+}
+.features__item-img-wrap:hover .features__item-img {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+.features__item-img-wrap-inner {
+  overflow: hidden;
 }
 
 .semisphere-second::after {
