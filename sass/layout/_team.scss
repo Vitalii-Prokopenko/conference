@@ -1,0 +1,33 @@
+/* === TEAM === */
+.team {
+  &__container {
+    padding-top: 100px;
+    padding-bottom: 100px;
+
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__swiper {
+    width: 670px;
+  }
+
+  &__wrap {
+    width: 471px;
+  }
+
+  &__subtitle {
+    @extend %section-subtitle;
+  }
+
+  &__title {
+    margin-bottom: 6px;
+    @extend %section-title;
+  }
+
+  &__text {
+    margin-bottom: 25px;
+    @extend %main-text;  
+    
+  }
+}

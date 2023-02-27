@@ -549,9 +549,7 @@
             <thead class="schedule__table-head">
               <tr class="schedule__table-row">
                 <td class="schedule__table-head-cell"></td>
-                <th class="schedule__table-head-cell first">
-                  wednesday
-                </th>
+                <th class="schedule__table-head-cell first">wednesday</th>
                 <th class="schedule__table-head-cell fourth">
                   <p>thursday</p>
                 </th>
@@ -640,12 +638,12 @@
       <section class="team">
         <div class="container team__container">
           <!-- Slider main container -->
-          <div class="swiper">
+          <div class="swiper team__swiper">
             <!-- Additional required wrapper -->
-            <div class="swiper-wrapper">
+            <div class="swiper-wrapper team__wrapper">
               <!-- Slides -->
               <!-- Team 1 -->
-              <div class="swiper-slide">
+              <div class="swiper-slide team__slide">
                 <div class="team__thumb">
                   <img src="./img/team/team3-270.jpg" alt="" width="270" height="370" />
                 </div>
@@ -1318,6 +1316,9 @@
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <!-- Initialize Hero Swiper -->
-    <script type="text/javascript" src="js/swiper.js"></script>
+    <!-- <script type="text/javascript" src="js/swiper.js"></script> -->
+    <script type="module" src="js/hero-swiper.js"></script>
+    <!-- Initialize Team Swiper -->
+    <script type="module" src="js/team-swiper.js"></script>
   </body>
 </html>

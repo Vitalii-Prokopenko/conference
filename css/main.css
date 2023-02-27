@@ -1,11 +1,11 @@
-.schedule__title, .about__title, .ceremony__title, .features__title {
+.team__title, .schedule__title, .about__title, .ceremony__title, .features__title {
   font-weight: 700;
   font-size: 50px;
   line-height: 1.2;
   color: #000;
 }
 
-.schedule__subtitle, .about__guest-type, .about__subtitle, .ceremony__subtitle, .features__subtitle {
+.team__subtitle, .schedule__subtitle, .about__guest-type, .about__subtitle, .ceremony__subtitle, .features__subtitle {
   font-family: "Sassy Frass", cursive;
   font-weight: 400;
   font-size: 40px;
@@ -13,7 +13,7 @@
   color: #EE0034;
 }
 
-.schedule__text, .about__text, .ceremony__text, .features__item-text, .features__text {
+.team__text, .schedule__text, .about__text, .ceremony__text, .features__item-text, .features__text {
   font-weight: 400;
   font-size: 15px;
   line-height: 1.4666666667;
@@ -1055,4 +1055,28 @@ body {
 
 .schedule__table-cell.fourth .schedule__table-text:nth-child(3) {
   color: #8000FF;
+}
+
+/* === TEAM === */
+.team__container {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.team__swiper {
+  width: 670px;
+}
+.team__wrap {
+  width: 471px;
+}
+.team__title {
+  margin-bottom: 6px;
+}
+.team__text {
+  margin-bottom: 25px;
 }/*# sourceMappingURL=main.css.map */
