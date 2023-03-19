@@ -1,0 +1,56 @@
+/* === PRICING TABLE === */
+.pricing-table {
+  &__container {
+    padding-right: 131px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+
+    display: flex;
+  }
+
+  &__list {
+    margin-right: 28px;
+    display: flex;
+
+    width: 870px;
+  }
+
+  &__item {
+    width: 270px;
+    border: 1px solid $tableBorderColor;
+    box-shadow: 10px 10px 20px rgba(gray, 0.7);
+  }
+
+  &__item:not(:last-child) {
+    margin-right: 30px;
+  }
+
+  &__item-wrap {
+    padding: 21px 14px 8px;
+  }
+
+  &__title {
+    margin-bottom: 14px;
+
+    font-size: 24px;
+    line-height: calc(36 / 24);
+    color: $darkColor;
+  }
+
+  &__features {
+    &-list {
+        margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+    }
+  }
+
+  &__features-item {
+    @extend %main-text;
+    line-height: calc(35 / 15);
+  }
+
+  &__wrap {
+    width: 276px;
+  }
+}

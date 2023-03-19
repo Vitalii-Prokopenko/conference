@@ -13,7 +13,7 @@
   color: #EE0034;
 }
 
-.team__text, .schedule__text, .about__text, .ceremony__text, .features__item-text, .features__text {
+.pricing-table__features-item, .team__text, .schedule__text, .about__text, .ceremony__text, .features__item-text, .features__text {
   font-weight: 400;
   font-size: 15px;
   line-height: 1.4666666667;
@@ -1079,4 +1079,50 @@ body {
 }
 .team__text {
   margin-bottom: 25px;
+}
+
+/* === PRICING TABLE === */
+.pricing-table__container {
+  padding-right: 131px;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.pricing-table__list {
+  margin-right: 28px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 870px;
+}
+.pricing-table__item {
+  width: 270px;
+  border: 1px solid #EEEEEE;
+  -webkit-box-shadow: 10px 10px 20px rgba(128, 128, 128, 0.7);
+          box-shadow: 10px 10px 20px rgba(128, 128, 128, 0.7);
+}
+.pricing-table__item:not(:last-child) {
+  margin-right: 30px;
+}
+.pricing-table__item-wrap {
+  padding: 21px 14px 8px;
+}
+.pricing-table__title {
+  margin-bottom: 14px;
+  font-size: 24px;
+  line-height: 1.5;
+  color: #000;
+}
+.pricing-table__features-list {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+.pricing-table__features-item {
+  line-height: 2.3333333333;
+}
+.pricing-table__wrap {
+  width: 276px;
 }/*# sourceMappingURL=main.css.map */
