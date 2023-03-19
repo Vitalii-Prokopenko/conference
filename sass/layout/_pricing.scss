@@ -19,6 +19,11 @@
     width: 270px;
     border: 1px solid $tableBorderColor;
     box-shadow: 10px 10px 20px rgba(gray, 0.7);
+    @include myTransition(box-shadow);
+
+    &:hover {
+      box-shadow: 15px 15px 20px rgba(gray, 0.8);
+    }
   }
 
   &__item:not(:last-child) {
@@ -26,7 +31,9 @@
   }
 
   &__item-wrap {
-    padding: 21px 14px 8px;
+    padding: 21px 14px 8px 14px;
+
+    position: relative;
   }
 
   &__title {
@@ -35,19 +42,79 @@
     font-size: 24px;
     line-height: calc(36 / 24);
     color: $darkColor;
+    @include myTransition(color);
   }
 
-  &__features {
-    &-list {
-        margin-top: 0;
-  margin-bottom: 0;
-  padding-left: 0;
-    }
+  &__item:hover &__title {
+    color: $accentColor;
   }
 
   &__features-item {
+    display: flex;
+    align-items: center;
     @extend %main-text;
     line-height: calc(35 / 15);
+
+    &::before {
+      content: '';
+      margin-right: 10px;
+      width: 5px;
+      height: 5px;
+      display: inline-block;
+      border-radius: 50%;
+      background-color: $secondGrayColor;
+    }
+  }
+
+  &__watersign {
+    position: absolute;
+    top: 135px;
+    right: -100px;
+    width: 260px;
+
+    font-weight: 700;
+    font-size: 40px;
+    line-height: calc(60 / 40);
+    text-align: right;
+    color: $lightColor;
+    text-shadow: -1px 0 $textShadowColor, 0 1px $textShadowColor, 1px 0 $textShadowColor,
+      0 -1px $textShadowColor;
+
+    transform: rotate(-90deg);
+  }
+
+  &__price-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__buy-link {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: calc(33 / 14);
+    text-transform: uppercase;
+    color: $accentColor;
+  }
+
+  &__price {
+    font-size: 13px;
+    line-height: calc(31 / 13);
+    color: $thirdGrayColor;
+
+    &-currency {
+      font-weight: 500;
+      font-size: 13px;
+      line-height: calc(31 / 13);
+      color: $darkColor;
+    }
+
+    &-number {
+      font-weight: 700;
+      font-size: 30px;
+      line-height: calc(70 / 30);
+      color: $darkColor;
+    }
   }
 
   &__wrap {
