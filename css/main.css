@@ -1,11 +1,11 @@
-.team__title, .schedule__title, .about__title, .ceremony__title, .features__title {
+.pricing-table__title, .team__title, .schedule__title, .about__title, .ceremony__title, .features__title {
   font-weight: 700;
   font-size: 50px;
   line-height: 1.2;
   color: #000;
 }
 
-.team__subtitle, .schedule__subtitle, .about__guest-type, .about__subtitle, .ceremony__subtitle, .features__subtitle {
+.pricing-table__subtitle, .team__subtitle, .schedule__subtitle, .about__guest-type, .about__subtitle, .ceremony__subtitle, .features__subtitle {
   font-family: "Sassy Frass", cursive;
   font-weight: 400;
   font-size: 40px;
@@ -13,7 +13,7 @@
   color: #EE0034;
 }
 
-.pricing-table__features-item, .team__text, .schedule__text, .about__text, .ceremony__text, .features__item-text, .features__text {
+.pricing-table__text, .pricing-table__features-item, .team__text, .schedule__text, .about__text, .ceremony__text, .features__item-text, .features__text {
   font-weight: 400;
   font-size: 15px;
   line-height: 1.4666666667;
@@ -1108,8 +1108,8 @@ body {
   transition: box-shadow 500ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 500ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .pricing-table__item:hover {
-  -webkit-box-shadow: 15px 15px 20px rgba(128, 128, 128, 0.8);
-          box-shadow: 15px 15px 20px rgba(128, 128, 128, 0.8);
+  -webkit-box-shadow: 15px 15px 20px rgba(128, 128, 128, 0.9);
+          box-shadow: 15px 15px 20px rgba(128, 128, 128, 0.9);
 }
 .pricing-table__item:not(:last-child) {
   margin-right: 30px;
@@ -1118,7 +1118,7 @@ body {
   padding: 21px 14px 8px 14px;
   position: relative;
 }
-.pricing-table__title {
+.pricing-table__item-title {
   margin-bottom: 14px;
   font-size: 24px;
   line-height: 1.5;
@@ -1198,4 +1198,13 @@ body {
 }
 .pricing-table__wrap {
   width: 276px;
+}
+.pricing-table__subtitle {
+  margin-bottom: 9px;
+}
+.pricing-table__title {
+  margin-bottom: 13px;
+}
+.pricing-table__text {
+  margin-bottom: 31px;
 }/*# sourceMappingURL=main.css.map */
