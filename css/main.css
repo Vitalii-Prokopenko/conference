@@ -1,11 +1,11 @@
-.pricing-table__title, .team__title, .schedule__title, .about__title, .ceremony__title, .features__title {
+.blog__title, .pricing-table__title, .team__title, .schedule__title, .about__title, .ceremony__title, .features__title {
   font-weight: 700;
   font-size: 50px;
   line-height: 1.2;
   color: #000;
 }
 
-.pricing-table__subtitle, .team__subtitle, .schedule__subtitle, .about__guest-type, .about__subtitle, .ceremony__subtitle, .features__subtitle {
+.blog__subtitle, .pricing-table__subtitle, .team__subtitle, .schedule__subtitle, .about__guest-type, .about__subtitle, .ceremony__subtitle, .features__subtitle {
   font-family: "Sassy Frass", cursive;
   font-weight: 400;
   font-size: 40px;
@@ -13,7 +13,7 @@
   color: #EE0034;
 }
 
-.pricing-table__text, .pricing-table__features-item, .team__text, .schedule__text, .about__text, .ceremony__text, .features__item-text, .features__text {
+.blog__text, .pricing-table__text, .pricing-table__features-item, .team__text, .schedule__text, .about__text, .ceremony__text, .features__item-text, .features__text {
   font-weight: 400;
   font-size: 15px;
   line-height: 1.4666666667;
@@ -1207,4 +1207,127 @@ body {
 }
 .pricing-table__text {
   margin-bottom: 31px;
+}
+
+/* === BLOG === */
+.blog__container {
+  padding-top: 91px;
+  padding-bottom: 95px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.blog__subtitle {
+  margin-bottom: 3px;
+}
+.blog__title {
+  margin-bottom: 4px;
+}
+.blog__text {
+  margin-bottom: 60px;
+  width: 573px;
+  text-align: center;
+}
+.blog__list {
+  display: grid;
+  grid-template-columns: minmax(371px, auto) minmax(770px, auto);
+  grid-auto-rows: auto;
+  -webkit-column-gap: 30px;
+     -moz-column-gap: 30px;
+          column-gap: 30px;
+}
+.blog__wrap {
+  display: grid;
+  row-gap: 30px;
+  width: 100%;
+  height: 100%;
+}
+.blog__wrap:first-child {
+  grid-template-rows: repeat(2, 416px);
+}
+.blog__wrap:last-child {
+  grid-template-rows: repeat(3, 230px);
+}
+.blog__article {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  -webkit-transition: -webkit-box-shadow 500ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: -webkit-box-shadow 500ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: box-shadow 500ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: box-shadow 500ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 500ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.blog__wrap:first-child .blog__article {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 2px;
+}
+.blog__wrap:last-child .blog__article {
+  padding: 15px;
+  padding-right: 20px;
+  border: 1px solid #EEEEEE;
+}
+.blog__wrap:first-child .blog__article-img {
+  margin-bottom: 11px;
+}
+.blog__description-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.blog__description-item {
+  padding: 0 10px;
+  margin-bottom: 11px;
+  color: #AAAAAA;
+  font-size: 13px;
+}
+.blog__description-item:first-child {
+  padding-left: 0;
+}
+.blog__description-item:not(:last-child) {
+  border-right: 1px solid #AAAAAA;
+}
+.blog__item-title {
+  margin-bottom: 10px;
+  color: #000;
+  font-size: 22px;
+  line-height: 1.2;
+}
+.blog__short-text {
+  margin-bottom: 20px;
+  color: #888888;
+  font-size: 15px;
+  line-height: 1.4;
+}
+.blog__article-link {
+  color: #000;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 1.4;
+  pointer-events: auto;
+}
+.blog__article-link-icon {
+  fill: #000;
+}
+.blog__article-link:hover, .blog__article-link:focus {
+  color: #EE0034;
+}
+.blog__article-link:hover .blog__article-link-icon, .blog__article-link:focus .blog__article-link-icon {
+  fill: #EE0034;
+}
+.blog__wrap:last-child .blog__article:hover, .blog__wrap:last-child .blog__article:focus {
+  -webkit-box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+          box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
 }/*# sourceMappingURL=main.css.map */
