@@ -72,6 +72,10 @@
     margin-bottom: 11px;
   }
 
+  &__wrap:last-child &__article-img {
+    margin-right: 20px;
+  }
+
   &__description-list {
     display: flex;
   }

@@ -1282,6 +1282,9 @@ body {
 .blog__wrap:first-child .blog__article-img {
   margin-bottom: 11px;
 }
+.blog__wrap:last-child .blog__article-img {
+  margin-right: 20px;
+}
 .blog__description-list {
   display: -webkit-box;
   display: -ms-flexbox;
