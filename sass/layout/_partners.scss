@@ -1,0 +1,110 @@
+/* === PARTNERS === */
+.partners {
+  &__container {
+    padding-top: 90px;
+    padding-bottom: 100px;
+
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__subtitle {
+    margin-bottom: 11px;
+    @extend %section-subtitle;
+  }
+
+  &__title {
+    margin-bottom: 25px;
+    @extend %section-title;
+    width: 272px;
+  }
+
+  &__text {
+    margin-bottom: 30px;
+    @extend %main-text;
+
+    width: 369px;
+    text-align: left;
+  }
+
+  &__category-wrap {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__category-wrap:not(:last-child) {
+    margin-bottom: 26px;
+  }
+
+  &__category-title {
+    margin-bottom: 26px;
+    color: $darkColor;
+    font-size: 24px;
+    font-weight: 700;
+  }
+
+  &__list {
+    display: flex;
+  }
+
+  &__item {
+    width: 240px;
+    height: 130px;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    border: 1px solid $tableBorderColor;
+    @include myTransition(box-shadow);  
+    pointer-events: none;
+  }
+
+  &__item:not(:last-child) {
+    margin-right: 25px;
+  }
+
+  &__link {
+    background-position: center;
+    background-repeat: no-repeat;
+    pointer-events: auto;
+  }
+
+  .platinum &__item:nth-child(1) &__link {
+    width: 137px;
+    height: 41px;  
+    background: url(../img/icons/partners/image1.svg);
+  }
+
+  .platinum &__item:nth-child(2) &__link {
+    width: 132px;
+    height: 41px;  
+    background: url(../img/icons/partners/image2.svg);
+  }
+
+  .platinum &__item:nth-child(3) &__link {
+    width: 135px;
+    height: 41px;  
+    background: url(../img/icons/partners/image3.svg);
+  }
+
+  .gold &__item:nth-child(1) &__link {
+    width: 142px;
+    height: 39px;  
+    background: url(../img/icons/partners/image4.svg);
+  }
+
+  .gold &__item:nth-child(2) &__link {
+    width: 186px;
+    height: 40px;  
+    background: url(../img/icons/partners/image5.svg);
+  }
+
+  .gold &__item:nth-child(3) &__link {
+    width: 122px;
+    height: 30px;  
+    background: url(../img/icons/partners/image6.svg);
+  }
+
+&__item:hover {
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+}

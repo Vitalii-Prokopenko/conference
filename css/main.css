@@ -1,11 +1,11 @@
-.get-ticket__title, .blog__title, .pricing-table__title, .team__title, .schedule__title, .about__title, .ceremony__title, .features__title {
+.get-ticket__title, .blog__title, .pricing-table__title, .partners__title, .team__title, .schedule__title, .about__title, .ceremony__title, .features__title {
   font-weight: 700;
   font-size: 50px;
   line-height: 1.2;
   color: #000;
 }
 
-.get-ticket__subtitle, .blog__subtitle, .pricing-table__subtitle, .team__subtitle, .schedule__subtitle, .about__guest-type, .about__subtitle, .ceremony__subtitle, .features__subtitle {
+.get-ticket__subtitle, .blog__subtitle, .pricing-table__subtitle, .partners__subtitle, .team__subtitle, .schedule__subtitle, .about__guest-type, .about__subtitle, .ceremony__subtitle, .features__subtitle {
   font-family: "Sassy Frass", cursive;
   font-weight: 400;
   font-size: 40px;
@@ -13,7 +13,7 @@
   color: #EE0034;
 }
 
-.get-ticket__text, .blog__text, .pricing-table__text, .pricing-table__features-item, .team__text, .schedule__text, .about__text, .ceremony__text, .features__item-text, .features__text {
+.get-ticket__text, .blog__text, .pricing-table__text, .pricing-table__features-item, .partners__text, .team__text, .schedule__text, .about__text, .ceremony__text, .features__item-text, .features__text {
   font-weight: 400;
   font-size: 15px;
   line-height: 1.4666666667;
@@ -1079,6 +1079,114 @@ body {
 }
 .team__text {
   margin-bottom: 25px;
+}
+
+/* === PARTNERS === */
+.partners__container {
+  padding-top: 90px;
+  padding-bottom: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.partners__subtitle {
+  margin-bottom: 11px;
+}
+.partners__title {
+  margin-bottom: 25px;
+  width: 272px;
+}
+.partners__text {
+  margin-bottom: 30px;
+  width: 369px;
+  text-align: left;
+}
+.partners__category-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.partners__category-wrap:not(:last-child) {
+  margin-bottom: 26px;
+}
+.partners__category-title {
+  margin-bottom: 26px;
+  color: #000;
+  font-size: 24px;
+  font-weight: 700;
+}
+.partners__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.partners__item {
+  width: 240px;
+  height: 130px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 1px solid #EEEEEE;
+  -webkit-transition: -webkit-box-shadow 500ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: -webkit-box-shadow 500ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: box-shadow 500ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: box-shadow 500ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 500ms cubic-bezier(0.4, 0, 0.2, 1);
+  pointer-events: none;
+}
+.partners__item:not(:last-child) {
+  margin-right: 25px;
+}
+.partners__link {
+  background-position: center;
+  background-repeat: no-repeat;
+  pointer-events: auto;
+}
+.platinum .partners__item:nth-child(1) .partners__link {
+  width: 137px;
+  height: 41px;
+  background: url(../img/icons/partners/image1.svg);
+}
+.platinum .partners__item:nth-child(2) .partners__link {
+  width: 132px;
+  height: 41px;
+  background: url(../img/icons/partners/image2.svg);
+}
+.platinum .partners__item:nth-child(3) .partners__link {
+  width: 135px;
+  height: 41px;
+  background: url(../img/icons/partners/image3.svg);
+}
+.gold .partners__item:nth-child(1) .partners__link {
+  width: 142px;
+  height: 39px;
+  background: url(../img/icons/partners/image4.svg);
+}
+.gold .partners__item:nth-child(2) .partners__link {
+  width: 186px;
+  height: 40px;
+  background: url(../img/icons/partners/image5.svg);
+}
+.gold .partners__item:nth-child(3) .partners__link {
+  width: 122px;
+  height: 30px;
+  background: url(../img/icons/partners/image6.svg);
+}
+.partners__item:hover {
+  -webkit-box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+          box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
 }
 
 /* === PRICING TABLE === */
