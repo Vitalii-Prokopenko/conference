@@ -196,10 +196,10 @@
           <!-- Slider main container -->
           <div class="swiper hero-slider">
             <!-- Additional required wrapper -->
-            <div class="swiper-wrapper hero-swiper-wrapper">
+            <div class="swiper-wrapper hero-slider-wrapper">
               <!-- Slides -->
               <!-- Slide 1 -->
-              <div class="swiper-slide hero-swiper-slide">
+              <div class="swiper-slide hero-slider-slide">
                 <picture class="hero__picture">
                   <source
                     srcset="
@@ -225,7 +225,7 @@
                 </picture>
               </div>
               <!-- Slide 2 -->
-              <div class="swiper-slide hero-swiper-slide">
+              <div class="swiper-slide hero-slider-slide">
                 <picture class="hero__picture">
                   <source
                     srcset="
@@ -251,7 +251,7 @@
                 </picture>
               </div>
               <!-- Slide 3 -->
-              <div class="swiper-slide hero-swiper-slide">
+              <div class="swiper-slide hero-slider-slide">
                 <picture class="hero__picture">
                   <source
                     srcset="
@@ -278,14 +278,14 @@
               </div>
             </div>
             <!-- If we need pagination -->
-            <div class="swiper-pagination"></div>
+            <div class="swiper-pagination hero-slider-pagination"></div>
 
             <!-- If we need navigation buttons -->
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
+            <!-- <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div> -->
 
             <!-- If we need scrollbar -->
-            <div class="swiper-scrollbar"></div>
+            <!-- <div class="swiper-scrollbar"></div> -->
           </div>
           <!-- Countdown -->
           <div class="hero__countdown-wrap">
@@ -638,19 +638,19 @@
       <section class="team">
         <div class="container team__container">
           <!-- Slider main container -->
-          <div class="swiper team__swiper">
+          <div class="swiper team-slider">
             <!-- Additional required wrapper -->
-            <div class="swiper-wrapper team__wrapper">
+            <div class="swiper-wrapper team-slider-wrapper">
               <!-- Slides -->
               <!-- Team 1 -->
-              <div class="swiper-slide team__slide">
+              <div class="swiper-slide team-slide">
                 <div class="team__thumb">
                   <img src="./img/team/team3-270.jpg" alt="" width="270" height="370" />
                 </div>
                 <div class="team__overlay">
                   <p class="team__name">Tomas Gisby</p>
                   <p class="team__position">Marketing</p>
-                  <ul class="list" team__social-list>
+                  <ul class="list team__social-list">
                     <li class="team__social-item">
                       <a href="" class="team__social-link"
                         ><svg class="team__social-link-icon" width="7.35" height="14">
@@ -683,14 +683,14 @@
                 </div>
               </div>
               <!-- Team 2 -->
-              <div class="swiper-slide">
+              <div class="swiper-slide team-slide">
                 <div class="team__thumb">
                   <img src="./img/team/team2-270.jpg" alt="" width="270" height="370" />
                 </div>
                 <div class="team__overlay">
                   <p class="team__name">Helen Meisten</p>
                   <p class="team__position">Coaching</p>
-                  <ul class="list" team__social-list>
+                  <ul class="list team__social-list">
                     <li class="team__social-item">
                       <a href="" class="team__social-link"
                         ><svg class="team__social-link-icon" width="7.35" height="14">
@@ -723,14 +723,14 @@
                 </div>
               </div>
               <!-- Team 3 -->
-              <div class="swiper-slide">
+              <div class="swiper-slide team-slide">
                 <div class="team__thumb">
                   <img src="./img/team/team1-270.jpg" alt="" width="270" height="370" />
                 </div>
                 <div class="team__overlay">
                   <p class="team__name">Glen Killy</p>
                   <p class="team__position">Developer</p>
-                  <ul class="list" team__social-list>
+                  <ul class="list team__social-list">
                     <li class="team__social-item">
                       <a href="" class="team__social-link"
                         ><svg class="team__social-link-icon" width="7.35" height="14">
@@ -764,15 +764,19 @@
               </div>
             </div>
             <!-- If we need pagination -->
-            <div class="swiper-pagination"></div>
+            <!-- <div class="swiper-pagination"></div> -->
 
             <!-- If we need navigation buttons -->
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev team-btn-prev"></div>
+            <div class="swiper-button-next team-btn-next"></div>
 
             <!-- If we need scrollbar -->
-            <div class="swiper-scrollbar"></div>
+            <!-- <div class="swiper-scrollbar"></div> -->
           </div>
+          <!-- If we need navigation buttons 2 -->
+          <div class="swiper-button-pr team-btn-pr"></div>
+          <div class="swiper-button-ne team-btn-ne"></div>
+
           <!-- Text -->
           <div class="team__wrap">
             <p class="team__subtitle">Visionary</p>

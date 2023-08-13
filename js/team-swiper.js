@@ -1,23 +1,28 @@
-const swiper = new Swiper('.team__swiper', {
+const swiper = new Swiper('.team-slider', {
 // Classes
-    wrapperClass: '.team__wrapper',
-    slideClass: '.team__slide',
+    wrapperClass: 'team-slider-wrapper',
+    slideClass: 'team-slide',
+    slideActiveClass: 'active-slide',
+    slidePrevClass: 'prev-slide',
+    slideNextClass: 'next-slide',
+    slideVisibleClass: 'visible-slide',
+    
 
   // Optional parameters
 
   direction: 'horizontal',
-  loop: false,
+  loop: true,
   centeredSlides: false,
   effect: 'slide',
   grabCursor: true,
   speed: 1000,
-  slidesPerView: 'auto',
+  slidesPerView: 3,
   spaceBetween: 20,
 
-//   autoplay: {
-//     delay: 4000,
-//     disableOnInteraction: false,
-//   },
+  autoplay: {
+    delay: 4000,
+    disableOnInteraction: false,
+  },
 
 //   
 
@@ -28,8 +33,8 @@ const swiper = new Swiper('.team__swiper', {
 
   // Navigation arrows
   navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
+    nextEl: '.team-btn-next',
+    prevEl: '.team-btn-prev',
   },
 
   // And if we need scrollbar

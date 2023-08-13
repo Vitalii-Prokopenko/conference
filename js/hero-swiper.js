@@ -1,6 +1,10 @@
-const swiper = new Swiper('.swiper', {
+const swiper = new Swiper('.hero-slider', {
+  // Classes
+  slidePrevClass: '.hero-prev-slide',
+  slideNextClass: '.hero-next-slide',
+
   // Optional parameters
-  
+
   direction: 'horizontal',
   loop: true,
   centeredSlides: false,
@@ -8,7 +12,7 @@ const swiper = new Swiper('.swiper', {
   grabCursor: true,
   speed: 1000,
   slidesPerView: 'auto',
-  spaceBetween: 20,  
+  spaceBetween: 20,
 
   autoplay: {
     delay: 4000,
@@ -22,16 +26,18 @@ const swiper = new Swiper('.swiper', {
     depth: 0,
   },
 
-    // If we need pagination
+  // If we need pagination
   pagination: {
-    el: '.swiper-pagination',    
+    el: '.hero-slider-pagination',    
+    bulletClass: 'hero-slider-pagination-bullet',
+    bulletActiveClass: 'hero-slider-pagination-bullet-active',
   },
 
   // Navigation arrows
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
+  // navigation: {
+  //   nextEl: '.swiper-button-next',
+  //   prevEl: '.swiper-button-prev',
+  // },
 
   // And if we need scrollbar
   // scrollbar: {

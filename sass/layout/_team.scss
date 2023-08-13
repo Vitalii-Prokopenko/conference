@@ -1,33 +1,137 @@
 /* === TEAM === */
 .team {
   &__container {
+    // position: relative;
     padding-top: 100px;
     padding-bottom: 100px;
-
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
   }
 
-  &__swiper {
+  &-slider {
+    position: relative;
+    display: flex;
+
+    margin-right: 30px;
     width: 670px;
+    height: 1000px;
+    outline: 1px solid blue;
+    overflow: hidden;
   }
 
-  &__wrap {
-    width: 471px;
+  &-slider-wrapper {
+    // width: 670px;
+    height: 500px;
+    outline: 1px solid red;
   }
+
+  &-slide {
+    // width: 180px;
+    overflow: hidden;
+  }
+
+  // &__wrap {
+  //   display: none;
+  // }
 
   &__subtitle {
     @extend %section-subtitle;
+    margin-bottom: 6px;
   }
 
   &__title {
-    margin-bottom: 6px;
+    margin-bottom: 25px;
     @extend %section-title;
+    width: 448px;
   }
 
   &__text {
-    margin-bottom: 25px;
-    @extend %main-text;  
-    
+    margin-bottom: 30px;
+    @extend %main-text;
+    width: 470px;
   }
+
+  &-btn-prev,
+  &-btn-next {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background-color: $accentColor;
+  }
+
+  &-btn-prev:after,
+  &-btn-next:after {
+    content: none;
+  }
+
+  &-btn-next {
+    opacity: 0.5;
+    left: 940px;
+    z-index: 999;
+  }
+
+  &-btn-prev {
+    left: 1000px;
+  }
+
+  &__overlay {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 270px;
+    height: 134px;
+    text-align: center;
+    outline: 1px solid green;
+    background-color: blue;
+    background-color: linear-gradient(
+      360deg,
+      #000 0%,
+      rgba(0, 0, 0, 0.74) 64.82%,
+      rgba(0, 0, 0, 0) 100%
+    );
+  }
+
+  &__name {
+    margin-bottom: 2px;
+    color: $lightColor;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: calc(30 / 20);
+  }
+
+  &__position {
+    margin-bottom: 11px;
+    color: $lightColor;
+    font-size: 13px;
+    line-height: calc(19.5 / 13);
+  }
+
+  &__social-list {
+    display: flex;
+  }
+
+  &__social-item:not(:last-child) {
+    margin-right: 20px;
+  }
+
+  &__social-link-icon {
+    fill: $lightColor;
+    @include myTransition(fill);
+  }
+
+  &__social-link:hover &__social-link-icon {
+    fill: $accentColor;
+  }
+}
+
+.active-slide {
+  width: 270px;
+}
+
+.prev-slide {
+  width: 200px;
+}
+
+.prev-slide {
+  width: 180px;
 }

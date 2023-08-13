@@ -1,5 +1,5 @@
 /* === HERO-SLIDER === */
-.swiper {
+.hero-slider {
   width: 610px;
   height: 554px;
 
@@ -18,7 +18,13 @@
     }
   }
 
+  &-pagination {
+    display: flex;
+    justify-content: center;
+  }
+
   &-pagination-bullet {
+    display: block;
     width: 15px;
     height: 4px;
     border-radius: 0;
@@ -30,8 +36,7 @@
     }
   }
 
-  &-button-next,
-  &-button-prev {
-    display: none;
+  &-pagination-bullet:not(:last-child) {
+    margin-right: 10px;
   }
 }
