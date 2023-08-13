@@ -1,0 +1,179 @@
+/* === FOOTER === */
+.footer {
+  background-color: $footerBgColor;
+
+  &__upper {
+    padding-top: 100px;
+    padding-bottom: 51px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+  }
+
+  &__lower {
+    padding-top: 25px;
+    padding-bottom: 29px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__block {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__text {
+    margin-bottom: 15px;
+    width: 270px;
+    color: $fourthGrayColor;
+    font-size: 14px;
+    line-height: calc(19.6 / 14);
+  }
+
+  &__contact-item:not(:last-child) {
+    margin-bottom: 6px;
+  }
+
+  &__contact-link {
+    color: $lightColor;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: calc(19.6 / 14);
+    @include myTransition(color);
+
+    &:hover,
+    &:focus {
+      color: $accentColor;
+    }
+  }
+
+  &__subtitle {
+    color: $lightColor;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: calc(28 / 20);
+    text-transform: uppercase;
+  }
+
+  &__user-links-list:not(:last-child) {
+    margin-bottom: 9px;
+  }
+
+  &__user-links-link {
+    display: flex;
+    align-items: center;
+    color: $fourthGrayColor;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: calc(28 / 14);
+    @include myTransition(color);
+
+    &:hover,
+    &:focus {
+      color: $accentColor;
+    }
+  }
+
+  &__user-links-link::before {
+    content: '•';
+    color: inherit;
+    margin-right: 14px;
+  }
+
+  &__block:nth-child(3) &__subtitle {
+    margin-bottom: 31px;
+  }
+
+  &__img-list {
+    display: grid;
+    grid-template-columns: repeat(3, 82px);
+    grid-template-rows: repeat(3, 82px);
+    column-gap: 10px;
+    row-gap: 8px;
+  }
+
+  &__img-item {
+    overflow: hidden;
+  }
+
+  &__img {
+    @include myTransition(transform);
+  }
+
+  &__img-item:hover &__img,
+  &__img-item:focus &__img {
+    transform: scale(1.2);
+  }
+
+  &__block:nth-child(4) &__subtitle {
+    margin-bottom: 27px;
+  }
+
+  &__block:nth-child(4) &__text {
+    margin-bottom: 17px;
+    width: 229px;
+  }
+
+  &__form-input {
+    margin-bottom: 20px;
+    width: 270px;
+    height: 32px;
+    background-color: inherit;
+    color: $thirdGrayColor;
+    border: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+
+    &::placeholder {
+      color: $thirdGrayColor;
+      font-size: 13px;
+      font-weight: 500;
+      line-height: calc(18.2 / 13);
+    }
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  &__form-btn {
+    width: 120px;
+    height: 40px;
+  }
+
+  &__rights {
+    color: $secondGrayColor;
+    font-size: 15px;
+    line-height: calc(21 / 15);
+  }
+
+  &__links-wrap {
+    display: flex;
+  }
+
+  &__links-text {
+    margin-right: 19px;
+    color: $secondGrayColor;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: calc(18.2 / 13);
+  }
+
+  &__links-list {
+    display: flex;
+  }
+
+  &__links-item:not(:last-child) {
+    margin-right: 15px;
+  }
+
+  &__links-icon {
+    fill: $lightColor;
+    fill-opacity: 0.3;
+  }
+
+  &__links-link:hover &__links-icon,
+  &__links-link:focus &__links-icon {
+    fill-opacity: 1;
+  }
+}
