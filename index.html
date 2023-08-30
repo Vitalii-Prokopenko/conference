@@ -844,25 +844,44 @@
             incididunt ut labore et dolore magna aliqua.
           </p>
           <!-- Slider main container -->
-          <div class="swiper">
+          <div class="swiper testimonials-slider">
             <!-- Additional required wrapper -->
-            <div class="swiper-wrapper">
+            <div class="swiper-wrapper testimonials-slider-wrapper">
               <!-- Slides -->
               <!-- 1st testimonial -->
-              <div class="swiper-slide">
+              <div class="swiper-slide testimonials-slide">
                 <div class="testimonials__thumb">
-                  <img
-                    src="./img/testimonials/testimonials-1-250.jpg"
-                    alt=""
-                    width="250"
-                    height="310"
-                  />
+                  <picture class="testimonials__picture">
+                    <source
+                      srcset="
+                        ./img/testimonials/testimonials-1-250.webp     1x,
+                        ./img/testimonials/testimonials-1-@2x-500.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./img/testimonials/testimonials-1-250.jpg     1x,
+                        ./img/testimonials/testimonials-1-@2x-500.jpg 2x
+                      "
+                      type="image/jpeg"
+                    />
+                    <img
+                      class="img testimonials__img"
+                      src="./img/testimonials/testimonials-1-250.jpg"
+                      alt="woman speaks"
+                      width="250"
+                      height="310"
+                    />
+                  </picture>
                 </div>
-                <div class="testimonials__overlay">
-                  <svg class="partners__icon" width="29.99" height="26.24">
-                    <use href="./img/icons/icons.svg#icon-quotes"></use>
-                  </svg>
-                  <p class="testimonials__text">
+                <div class="testimonials__content">
+                  <div class="testimonials__icon-wrap">
+                    <svg class="testimonials__icon" width="29.99" height="26.24">
+                      <use href="./img/icons/icons.svg#icon-quotes"></use>
+                    </svg>
+                  </div>
+                  <p class="testimonials__opinion">
                     "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                     incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
                     nostrud exercitation ullamco laboris nisi ut aliquip
@@ -871,21 +890,40 @@
                   <p class="testimonials__posititon">Ceo & Co-Founder</p>
                 </div>
               </div>
-              <!-- 1st testimonial -->
-              <div class="swiper-slide">
+              <!-- 2nd testimonial -->
+              <div class="swiper-slide testimonials-slide">
                 <div class="testimonials__thumb">
-                  <img
-                    src="./img/testimonials/testimonials-2-250.jpg"
-                    alt=""
-                    width="250"
-                    height="310"
-                  />
+                  <picture class="testimonials__picture">
+                    <source
+                      srcset="
+                        ./img/testimonials/testimonials-2-250.webp     1x,
+                        ./img/testimonials/testimonials-2-@2x-500.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./img/testimonials/testimonials-2-250.jpg     1x,
+                        ./img/testimonials/testimonials-2-@2x-500.jpg 2x
+                      "
+                      type="image/jpeg"
+                    />
+                    <img
+                      class="img testimonials__img"
+                      src="./img/testimonials/testimonials-2-250.jpg"
+                      alt="woman speaks"
+                      width="250"
+                      height="310"
+                    />
+                  </picture>
                 </div>
-                <div class="testimonials__overlay">
-                  <svg class="partners__icon" width="29.99" height="26.24">
-                    <use href="./img/icons/icons.svg#icon-quotes"></use>
-                  </svg>
-                  <p class="testimonials__text">
+                <div class="testimonials__content">
+                  <div class="testimonials__icon-wrap">
+                    <svg class="testimonials__icon" width="29.99" height="26.24">
+                      <use href="./img/icons/icons.svg#icon-quotes"></use>
+                    </svg>
+                  </div>
+                  <p class="testimonials__opinion">
                     "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                     incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
                     nostrud exercitation ullamco laboris nisi ut aliquip
@@ -894,17 +932,100 @@
                   <p class="testimonials__posititon">Ceo & Co-Founder</p>
                 </div>
               </div>
-              <div class="swiper-slide">Slide 3</div>
+              <!-- 3rd testimonial -->
+              <div class="swiper-slide testimonials-slide">
+                <div class="testimonials__thumb">
+                  <picture class="testimonials__picture">
+                    <source
+                      srcset="
+                        ./img/testimonials/testimonials-1-250.webp     1x,
+                        ./img/testimonials/testimonials-1-@2x-500.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./img/testimonials/testimonials-1-250.jpg     1x,
+                        ./img/testimonials/testimonials-1-@2x-500.jpg 2x
+                      "
+                      type="image/jpeg"
+                    />
+                    <img
+                      class="img testimonials__img"
+                      src="./img/testimonials/testimonials-1-250.jpg"
+                      alt="woman speaks"
+                      width="250"
+                      height="310"
+                    />
+                  </picture>
+                </div>
+                <div class="testimonials__content">
+                  <div class="testimonials__icon-wrap">
+                    <svg class="testimonials__icon" width="29.99" height="26.24">
+                      <use href="./img/icons/icons.svg#icon-quotes"></use>
+                    </svg>
+                  </div>
+                  <p class="testimonials__opinion">
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                    nostrud exercitation ullamco laboris nisi ut aliquip
+                  </p>
+                  <p class="testimonials__name">Ameena Selim</p>
+                  <p class="testimonials__posititon">Ceo & Co-Founder</p>
+                </div>
+              </div>
+              <!-- 4th testimonial -->
+              <div class="swiper-slide testimonials-slide">
+                <div class="testimonials__thumb">
+                  <picture class="testimonials__picture">
+                    <source
+                      srcset="
+                        ./img/testimonials/testimonials-2-250.webp     1x,
+                        ./img/testimonials/testimonials-2-@2x-500.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./img/testimonials/testimonials-2-250.jpg     1x,
+                        ./img/testimonials/testimonials-2-@2x-500.jpg 2x
+                      "
+                      type="image/jpeg"
+                    />
+                    <img
+                      class="img testimonials__img"
+                      src="./img/testimonials/testimonials-2-250.jpg"
+                      alt="woman speaks"
+                      width="250"
+                      height="310"
+                    />
+                  </picture>
+                </div>
+                <div class="testimonials__content">
+                  <div class="testimonials__icon-wrap">
+                    <svg class="testimonials__icon" width="29.99" height="26.24">
+                      <use href="./img/icons/icons.svg#icon-quotes"></use>
+                    </svg>
+                  </div>
+                  <p class="testimonials__opinion">
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                    nostrud exercitation ullamco laboris nisi ut aliquip
+                  </p>
+                  <p class="testimonials__name">Jasmeen Rahima</p>
+                  <p class="testimonials__posititon">Ceo & Co-Founder</p>
+                </div>
+              </div>
             </div>
             <!-- If we need pagination -->
-            <div class="swiper-pagination"></div>
+            <div class="swiper-pagination testimonials-pagination"></div>
 
             <!-- If we need navigation buttons -->
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
+            <!-- <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div> -->
 
             <!-- If we need scrollbar -->
-            <div class="swiper-scrollbar"></div>
+            <!-- <div class="swiper-scrollbar"></div> -->
           </div>
         </div>
       </section>
@@ -1426,5 +1547,7 @@
     <script type="module" src="js/hero-swiper.js"></script>
     <!-- Initialize Team Swiper -->
     <script type="module" src="js/team-swiper.js"></script>
+    <!-- Initialize Testimonials Swiper -->
+    <script type="module" src="js/testimonials-swiper.js"></script>
   </body>
 </html>
