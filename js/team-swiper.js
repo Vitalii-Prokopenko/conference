@@ -42,3 +42,7 @@ const swiper = new Swiper('.team-slider', {
   //   el: '.swiper-scrollbar',
   // },
 });
+
+swiper.on('click', function () {
+  console.log('slide clicked');
+});

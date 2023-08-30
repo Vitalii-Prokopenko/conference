@@ -1,7 +1,7 @@
 /* === TEAM === */
 .team {
   &__container {
-    // position: relative;
+    position: relative;
     padding-top: 100px;
     padding-bottom: 100px;
     display: flex;
@@ -9,23 +9,20 @@
   }
 
   &-slider {
-    position: relative;
     display: flex;
-
     margin-right: 30px;
     width: 670px;
-    height: 1000px;
-    outline: 1px solid blue;
+    height: 370px;
     overflow: hidden;
   }
 
   &-slider-wrapper {
     // width: 670px;
     height: 500px;
-    outline: 1px solid red;
   }
 
   &-slide {
+    position: relative;
     // width: 180px;
     overflow: hidden;
   }
@@ -54,6 +51,9 @@
   &-btn-prev,
   &-btn-next {
     position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 40px;
     height: 40px;
     background-color: $accentColor;
@@ -66,15 +66,24 @@
 
   &-btn-next {
     opacity: 0.5;
-    left: 940px;
-    z-index: 999;
+    left: 835px;
+    top: 410px;
   }
 
   &-btn-prev {
-    left: 1000px;
+    left: 890px;
+    top: 410px;
   }
 
+  &-btn-prev &__btn-icon,
+  &-btn-next &__btn-icon {
+    fill: $lightColor;
+  }  
+
   &__overlay {
+    position: absolute;
+    top: 200px;
+    z-index: 3;
     display: flex;
     flex-direction: column;
     align-items: center;

@@ -1074,6 +1074,7 @@ body {
 
 /* === TEAM === */
 .team__container {
+  position: relative;
   padding-top: 100px;
   padding-bottom: 100px;
   display: -webkit-box;
@@ -1084,21 +1085,19 @@ body {
           justify-content: flex-start;
 }
 .team-slider {
-  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   margin-right: 30px;
   width: 670px;
-  height: 1000px;
-  outline: 1px solid blue;
+  height: 370px;
   overflow: hidden;
 }
 .team-slider-wrapper {
   height: 500px;
-  outline: 1px solid red;
 }
 .team-slide {
+  position: relative;
   overflow: hidden;
 }
 .team__subtitle {
@@ -1114,6 +1113,15 @@ body {
 }
 .team-btn-prev, .team-btn-next {
   position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 40px;
   height: 40px;
   background-color: #EE0034;
@@ -1123,13 +1131,20 @@ body {
 }
 .team-btn-next {
   opacity: 0.5;
-  left: 940px;
-  z-index: 999;
+  left: 835px;
+  top: 410px;
 }
 .team-btn-prev {
-  left: 1000px;
+  left: 890px;
+  top: 410px;
+}
+.team-btn-prev .team__btn-icon, .team-btn-next .team__btn-icon {
+  fill: #fff;
 }
 .team__overlay {
+  position: absolute;
+  top: 200px;
+  z-index: 3;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
