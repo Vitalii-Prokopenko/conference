@@ -1094,11 +1094,17 @@ body {
   overflow: hidden;
 }
 .team-slider-wrapper {
-  height: 500px;
+  width: 100%;
+  height: 100%;
 }
 .team-slide {
   position: relative;
+  width: 210px;
   overflow: hidden;
+  -webkit-transition: -webkit-transform 500ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: -webkit-transform 500ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 500ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 500ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 500ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .team__subtitle {
   margin-bottom: 6px;
@@ -1141,10 +1147,18 @@ body {
 .team-btn-prev .team__btn-icon, .team-btn-next .team__btn-icon {
   fill: #fff;
 }
+.team__thumb {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
 .team__overlay {
   position: absolute;
-  top: 200px;
-  z-index: 3;
+  left: 0;
+  bottom: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1155,11 +1169,15 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 270px;
+  width: 100%;
   height: 134px;
   text-align: center;
-  outline: 1px solid green;
-  background-color: blue;
+  -webkit-transform: translateY(100%);
+          transform: translateY(100%);
+  -webkit-transition: -webkit-transform 500ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: -webkit-transform 500ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 500ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 500ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 500ms cubic-bezier(0.4, 0, 0.2, 1);
   background-color: linear-gradient(360deg, #000 0%, rgba(0, 0, 0, 0.74) 64.82%, rgba(0, 0, 0, 0) 100%);
 }
 .team__name {
@@ -1191,21 +1209,31 @@ body {
 .team__social-link:hover .team__social-link-icon {
   fill: #EE0034;
 }
-
-.active-slide {
-  width: 270px;
+.team__slider-wrap::before, .team__slider-wrap::after {
+  position: absolute;
+  z-index: -1;
+  content: "";
+  display: block;
+  width: 236px;
+  height: 236px;
+  border-radius: 50%;
 }
-
-.prev-slide {
-  width: 200px;
+.team .semisphere::before {
+  top: 30px;
+  left: 75px;
+  background: -webkit-gradient(linear, right bottom, left top, color-stop(50%, transparent), color-stop(50%, #25CD44));
+  background: linear-gradient(to left top, transparent 50%, #25CD44 50%);
 }
-
-.prev-slide {
-  width: 180px;
+.team .semisphere::after {
+  bottom: 10px;
+  left: 430px;
+  background: -webkit-gradient(linear, left top, right bottom, color-stop(50%, transparent), color-stop(50%, #FFB339));
+  background: linear-gradient(to right bottom, transparent 50%, #FFB339 50%);
 }
 
 /* === PARTNERS === */
 .partners__container {
+  position: relative;
   padding-top: 90px;
   padding-bottom: 100px;
   display: -webkit-box;
@@ -1226,6 +1254,19 @@ body {
   margin-bottom: 30px;
   width: 369px;
   text-align: left;
+}
+.partners__wrap::after {
+  position: absolute;
+  bottom: 10px;
+  right: 50px;
+  z-index: -1;
+  content: "";
+  display: block;
+  width: 158px;
+  height: 158px;
+  border-radius: 50%;
+  background: -webkit-gradient(linear, left top, right bottom, color-stop(50%, transparent), color-stop(50%, #25CD44));
+  background: linear-gradient(to right bottom, transparent 50%, #25CD44 50%);
 }
 .partners__category-wrap {
   display: -webkit-box;
@@ -1314,6 +1355,7 @@ body {
 
 /* === TESTIMONIALS === */
 .testimonials__container {
+  position: relative;
   padding-top: 89px;
   padding-bottom: 100px;
   display: -webkit-box;
@@ -1337,6 +1379,22 @@ body {
   margin-bottom: 60px;
   width: 573px;
   text-align: center;
+}
+.testimonials__slider-outer-wrap {
+  width: 100%;
+}
+.testimonials__slider-outer-wrap::after {
+  position: absolute;
+  bottom: 80px;
+  right: 80px;
+  z-index: -1;
+  content: "";
+  display: block;
+  width: 158px;
+  height: 158px;
+  border-radius: 50%;
+  background: -webkit-gradient(linear, left top, right bottom, color-stop(50%, transparent), color-stop(50%, #FFB339));
+  background: linear-gradient(to right bottom, transparent 50%, #FFB339 50%);
 }
 .testimonials-slider {
   width: 100%;

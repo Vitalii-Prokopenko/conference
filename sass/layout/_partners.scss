@@ -1,6 +1,7 @@
 /* === PARTNERS === */
 .partners {
   &__container {
+    position: relative;
     padding-top: 90px;
     padding-bottom: 100px;
 
@@ -25,6 +26,21 @@
 
     width: 369px;
     text-align: left;
+  }
+
+  &__wrap::after {
+    position: absolute;
+    bottom: 10px;
+    right: 50px;
+
+    z-index: -1;
+
+    content: '';
+    display: block;
+    width: 158px;
+    height: 158px;
+    border-radius: 50%;
+    background: linear-gradient(to right bottom, transparent 50%, #25CD44 50%);
   }
 
   &__category-wrap {

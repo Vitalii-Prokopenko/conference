@@ -17,19 +17,16 @@
   }
 
   &-slider-wrapper {
-    // width: 670px;
-    height: 500px;
+    width: 100%;
+    height: 100%;
   }
 
   &-slide {
     position: relative;
-    // width: 180px;
+    width: 210px;
     overflow: hidden;
+    @include myTransition(transform);
   }
-
-  // &__wrap {
-  //   display: none;
-  // }
 
   &__subtitle {
     @extend %section-subtitle;
@@ -78,20 +75,26 @@
   &-btn-prev &__btn-icon,
   &-btn-next &__btn-icon {
     fill: $lightColor;
-  }  
+  }
+
+  &__thumb {
+    display: flex;
+    justify-content: center;
+  }
 
   &__overlay {
     position: absolute;
-    top: 200px;
-    z-index: 3;
+    left: 0;
+    bottom: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 270px;
+    width: 100%;
     height: 134px;
     text-align: center;
-    outline: 1px solid green;
-    background-color: blue;
+    transform: translateY(100%);
+    @include myTransition(transform);
+
     background-color: linear-gradient(
       360deg,
       #000 0%,
@@ -131,16 +134,32 @@
   &__social-link:hover &__social-link-icon {
     fill: $accentColor;
   }
+
+  &__slider-wrap::before,
+  &__slider-wrap::after {
+    position: absolute;
+
+    z-index: -1;
+
+    content: '';
+    display: block;
+    width: 236px;
+    height: 236px;
+    border-radius: 50%;
+  }
+
+  .semisphere::before {
+    top: 30px;
+    left: 75px;
+    background: linear-gradient(to left top, transparent 50%, #25CD44 50%);
+  }
+
+  .semisphere::after {
+    bottom: 10px;
+    left: 430px;
+    background: linear-gradient(to right bottom, transparent 50%, #FFB339 50%);
+  }
 }
 
-.active-slide {
-  width: 270px;
-}
 
-.prev-slide {
-  width: 200px;
-}
 
-.prev-slide {
-  width: 180px;
-}

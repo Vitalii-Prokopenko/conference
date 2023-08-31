@@ -1,6 +1,7 @@
 /* === TESTIMONIALS === */
 .testimonials {
-  &__container {   
+  &__container {
+    position: relative;
     padding-top: 89px;
     padding-bottom: 100px;
     display: flex;
@@ -25,11 +26,30 @@
     text-align: center;
   }
 
+  &__slider-outer-wrap {
+   width: 100%;
+  }
+
+  &__slider-outer-wrap::after {
+    position: absolute;
+    bottom: 80px;
+    right: 80px;
+
+    z-index: -1;
+
+    content: '';
+    display: block;
+    width: 158px;
+    height: 158px;
+    border-radius: 50%;
+    background: linear-gradient(to right bottom, transparent 50%, #FFB339 50%);
+  }
+
   &-slider {
     width: 100%;
     height: 384px;
-    overflow: hidden;
-  }
+    overflow: hidden;    
+  } 
 
   &-slider-wrapper {
     margin-bottom: 30px;
