@@ -19,7 +19,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
     />
     <!-- Swiper styles -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />    
     <!-- Custom styles -->
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
@@ -291,24 +291,20 @@
           <div class="hero__countdown-wrap">
             <ul class="list hero__countdown-list">
               <li class="hero__countdown-item">
-                <p class="hero__countdown-time time-first">
-                  <span class="hero__countdown-numbers">23</span>day
-                </p>
+                <span class="hero__countdown-numbers time-first field" data-days></span>
+                <span class="hero__countdown-label time-first">days</span>
               </li>
               <li class="hero__countdown-item">
-                <p class="hero__countdown-time time-second">
-                  <span class="hero__countdown-numbers">18</span>hours
-                </p>
+                <span class="hero__countdown-numbers time-second field" data-hours></span>
+                <span class="hero__countdown-label time-second">hours</span>
               </li>
               <li class="hero__countdown-item">
-                <p class="hero__countdown-time time-third">
-                  <span class="hero__countdown-numbers">39</span>minutes
-                </p>
+                <span class="hero__countdown-numbers time-third field" data-minutes></span>
+                <span class="hero__countdown-label time-third">minutes</span>
               </li>
               <li class="hero__countdown-item">
-                <p class="hero__countdown-time time-fourth">
-                  <span class="hero__countdown-numbers">45</span>seconds
-                </p>
+                <span class="hero__countdown-numbers time-fourth field" data-seconds></span>
+                <span class="hero__countdown-label time-fourth">seconds</span>
               </li>
             </ul>
           </div>
@@ -1552,13 +1548,14 @@
         </div>
       </div>
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-    <!-- Initialize Hero Swiper -->
-    <!-- <script type="text/javascript" src="js/swiper.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>    
+    <!-- Initialize Hero Swiper -->    
     <script type="module" src="js/hero-swiper.js"></script>
     <!-- Initialize Team Swiper -->
     <script type="module" src="js/team-swiper.js"></script>
     <!-- Initialize Testimonials Swiper -->
     <script type="module" src="js/testimonials-swiper.js"></script>
+    <!-- Initialize Timer -->
+    <script type="module" src="js/timer.js"></script>
   </body>
 </html>

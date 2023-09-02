@@ -46,7 +46,7 @@ let clickedSlide;
 let clickedSlideOverlay;
 
 swiper.on('click', function () {
-  console.log('slide clicked');
+  // console.log('slide clicked');
 
   clickedSlide = this.clickedSlide;
   clickedSlide.style.transform = 'scale(1.2857)';
@@ -56,7 +56,7 @@ swiper.on('click', function () {
 });
 
 swiper.on('slideChange', function () {
-  console.log('slide changed');
+  // console.log('slide changed');
   if (clickedSlide) {
     clickedSlide.style.transform = 'scale(1)';
     clickedSlideOverlay.style.transform = 'translateY(100%)';

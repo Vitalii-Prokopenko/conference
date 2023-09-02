@@ -234,11 +234,7 @@
       display: flex;
     }
 
-    &-item:not(:last-child) {
-      margin-right: 74px;
-    }
-
-    &-time {
+    &-item {
       display: flex;
       flex-direction: column;
 
@@ -247,6 +243,10 @@
       // line-height: calc(29 / 16);
       text-align: center;
       text-transform: uppercase;
+    }
+
+    &-item:not(:last-child) {
+      margin-right: 74px;
     }
 
     &-numbers {
