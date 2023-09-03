@@ -151,15 +151,12 @@
   .semisphere::before {
     top: 30px;
     left: 75px;
-    background: linear-gradient(to left top, transparent 50%, #25CD44 50%);
+    background: linear-gradient(to left top, transparent 50%, #25cd44 50%);
   }
 
   .semisphere::after {
     bottom: 10px;
     left: 430px;
-    background: linear-gradient(to right bottom, transparent 50%, #FFB339 50%);
+    background: linear-gradient(to right bottom, transparent 50%, #ffb339 50%);
   }
 }
-
-
-

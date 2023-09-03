@@ -73,7 +73,6 @@ body {
   margin: 0 auto;
   width: 1440px;
   padding: 0 135px;
-  outline: 1px solid crimson;
 }
 
 /* === BUTTONS === */
@@ -1221,14 +1220,14 @@ body {
 .team .semisphere::before {
   top: 30px;
   left: 75px;
-  background: -webkit-gradient(linear, right bottom, left top, color-stop(50%, transparent), color-stop(50%, #25CD44));
-  background: linear-gradient(to left top, transparent 50%, #25CD44 50%);
+  background: -webkit-gradient(linear, right bottom, left top, color-stop(50%, transparent), color-stop(50%, #25cd44));
+  background: linear-gradient(to left top, transparent 50%, #25cd44 50%);
 }
 .team .semisphere::after {
   bottom: 10px;
   left: 430px;
-  background: -webkit-gradient(linear, left top, right bottom, color-stop(50%, transparent), color-stop(50%, #FFB339));
-  background: linear-gradient(to right bottom, transparent 50%, #FFB339 50%);
+  background: -webkit-gradient(linear, left top, right bottom, color-stop(50%, transparent), color-stop(50%, #ffb339));
+  background: linear-gradient(to right bottom, transparent 50%, #ffb339 50%);
 }
 
 /* === PARTNERS === */
@@ -1265,8 +1264,8 @@ body {
   width: 158px;
   height: 158px;
   border-radius: 50%;
-  background: -webkit-gradient(linear, left top, right bottom, color-stop(50%, transparent), color-stop(50%, #25CD44));
-  background: linear-gradient(to right bottom, transparent 50%, #25CD44 50%);
+  background: -webkit-gradient(linear, left top, right bottom, color-stop(50%, transparent), color-stop(50%, #25cd44));
+  background: linear-gradient(to right bottom, transparent 50%, #25cd44 50%);
 }
 .partners__category-wrap {
   display: -webkit-box;
@@ -1393,8 +1392,8 @@ body {
   width: 158px;
   height: 158px;
   border-radius: 50%;
-  background: -webkit-gradient(linear, left top, right bottom, color-stop(50%, transparent), color-stop(50%, #FFB339));
-  background: linear-gradient(to right bottom, transparent 50%, #FFB339 50%);
+  background: -webkit-gradient(linear, left top, right bottom, color-stop(50%, transparent), color-stop(50%, #ffb339));
+  background: linear-gradient(to right bottom, transparent 50%, #ffb339 50%);
 }
 .testimonials-slider {
   width: 100%;
